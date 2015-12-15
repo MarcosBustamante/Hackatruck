@@ -10,12 +10,27 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-   
+    @IBOutlet weak var tabelaTags: UITableView!
     @IBOutlet weak var imgPerfil: UIImageView!
     @IBOutlet weak var labelNome: UILabel!
     @IBOutlet weak var labelReais: UILabel!
     
     
+    @IBAction func addTags(sender: AnyObject) {
+        
+    
+        let alert = UIAlertView()
+        alert.title = "Adicione a tag"
+        alert.addButtonWithTitle("Add")
+        alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
+        alert.addButtonWithTitle("Cancel")
+        let textField = alert.textFieldAtIndex(0)
+        textField?.placeholder = "Tag"
+        
+        alert.show()
+        
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

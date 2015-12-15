@@ -25,6 +25,7 @@
 		3F1A27B01C1EEDDA00409693 /* NotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */; };
 		3F1A27B21C1EEDF300409693 /* NotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */; };
 		3F1A27B41C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */; };
+		3F7EDB3D1C202F83002B7E79 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotTableViewCell.swift; path = ../NotTableViewCell.swift; sourceTree = "<group>"; };
 		3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotTableViewController.swift; sourceTree = "<group>"; };
 		3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_picture_by_kyo_tux-d4hrimy.png"; sourceTree = "<group>"; };
+		3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */,
 				3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */,
 				3F1A27A91C1EDFAA00409693 /* ProfileViewController.swift */,
+				3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */,
 				3F1A27751C1EC8D800409693 /* Main.storyboard */,
 				3F1A27781C1EC8D800409693 /* Assets.xcassets */,
 				3F1A277A1C1EC8D800409693 /* LaunchScreen.storyboard */,
@@ -297,6 +300,7 @@
 				3F1A27AC1C1EE54A00409693 /* HomeTableViewCell.swift in Sources */,
 				3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */,
 				3F1A27B01C1EEDDA00409693 /* NotTableViewCell.swift in Sources */,
+				3F7EDB3D1C202F83002B7E79 /* ProfileTableViewCell.swift in Sources */,
 				3F1A27AA1C1EDFAA00409693 /* ProfileViewController.swift in Sources */,
 				3F1A27701C1EC8D800409693 /* AppDelegate.swift in Sources */,
 				3F1A27AE1C1EE8A700409693 /* MTuTableViewCell.swift in Sources */,
@@ -526,6 +530,7 @@
 				3F1A27981C1EC8D800409693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1A27991C1EC8D800409693 /* Build configuration list for PBXNativeTarget "TelasTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				3F1A279B1C1EC8D800409693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1A279C1C1EC8D800409693 /* Build configuration list for PBXNativeTarget "TelasUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				3F1A279E1C1EC8D800409693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
