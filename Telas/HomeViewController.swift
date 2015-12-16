@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableHome: UITableView!
     
     var tutoriais = [[String: String]]()
