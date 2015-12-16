@@ -92,6 +92,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         linha.labelNomeTutorial.text = tutorial["nome_tutorial"]
         linha.labelNome.text = tutorial["nome_autor"]
+        linha.labelVistoPor.text = tutorial["visto"]
+        linha.labelCurtidoPor.text = tutorial["likes"]
         
         return linha
     }

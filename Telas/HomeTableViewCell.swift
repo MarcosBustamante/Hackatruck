@@ -12,6 +12,8 @@ class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelNomeTutorial: UILabel!
     @IBOutlet weak var labelNome: UILabel!
+    @IBOutlet weak var labelVistoPor: UILabel!
+    @IBOutlet weak var labelCurtidoPor: UILabel!
     
     override func awakeFromNib() {
         

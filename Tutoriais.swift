@@ -17,6 +17,9 @@ class Tutoriais{
                 "nome_autor": "Autor \(i)",
                 "desc_tutorial": "Desc \(i)",
                 "nome_tutorial": "Tutorial \(i)",
+                "likes": "\(i)",
+                "visto": "\(20 - i)",
+                "publicado": "\(i%2 == 0)",
                 ])
         }
         return tutoriais

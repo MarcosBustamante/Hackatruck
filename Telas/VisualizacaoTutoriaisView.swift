@@ -12,6 +12,8 @@ class VisualizacaoTutoriaisView: UIViewController {
     
     @IBOutlet weak var labelNomeTutorial: UILabel!
     @IBOutlet weak var labelNomeAutor: UILabel!
+    @IBOutlet weak var labelVistoPor: UILabel!
+    @IBOutlet weak var labelCurtidoPor: UILabel!
     @IBOutlet weak var textViewTutorial: UITextView!
     
     var tutorial = [String: String]()
@@ -22,6 +24,8 @@ class VisualizacaoTutoriaisView: UIViewController {
         self.labelNomeAutor.text = self.tutorial["nome_autor"]
         self.labelNomeTutorial.text = self.tutorial["nome_tutorial"]
         self.textViewTutorial.text = self.tutorial["desc_tutorial"]
+        self.labelVistoPor.text = self.tutorial["visto"]
+        self.labelCurtidoPor.text = self.tutorial["likes"]
         // Do any additional setup after loading the view.
     }
 
