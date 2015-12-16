@@ -296,17 +296,14 @@
                                                 <action selector="backToHome:" destination="09D-aJ-blg" id="VgL-E9-17C"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Pedir" id="UKa-rV-loQ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Pedir" id="UKa-rV-loQ">
+                                            <connections>
+                                                <action selector="PedirNovoTutorial:" destination="09D-aJ-blg" id="itX-t7-PrH"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Descriçāo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1r-iv-sp4">
-                                <rect key="frame" x="189" y="168" width="240" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tags" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSx-CK-3hv">
                                 <rect key="frame" x="40" y="501" width="520" height="30"/>
                                 <animations/>
@@ -319,6 +316,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Descriçāo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x1r-iv-sp4">
+                                <rect key="frame" x="189" y="168" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -339,6 +343,11 @@
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="labelTags" destination="aSx-CK-3hv" id="xUP-rM-3Ro"/>
+                        <outlet property="labelTitulo" destination="AMG-Gu-vmu" id="4RX-hC-FcP"/>
+                        <outlet property="textViewDescricao" destination="x1r-iv-sp4" id="n2t-YB-gW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSG-0r-Hti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

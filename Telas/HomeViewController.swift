@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableHome: UITableView!
     
+    var alert: String?
     var searchActive : Bool = false
     var tutoriais = [[String: String]]()
     var filtered = [[String: String]]()
@@ -25,7 +26,15 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.tableHome.dataSource = self
         self.tableHome.delegate = self
         self.searchBar.delegate = self
+    
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if alert != nil {
+            self.showAlert("Parabéns", message: "O seu tutorial foi pedido para um especialista")
+            alert = nil
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,6 +115,19 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 visualizacaoTutoriaisView.tutorial = self.tutoriais[linhaAtualTabela]
             }
         }
+        
+        if segue.identifier == "pedirTutoriais" {
+            if let pedirTutoriaisView = segue.destinationViewController as? PedirTutorialView {
+                pedirTutoriaisView.parentView = self
+            }
+        }
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
 }

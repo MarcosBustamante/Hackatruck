@@ -9,9 +9,20 @@
 import UIKit
 
 class PedirTutorialView: UIViewController {
-
+    
+    @IBOutlet weak var labelTags: UITextField!
+    @IBOutlet weak var textViewDescricao: UITextView!
+    @IBOutlet weak var labelTitulo: UITextField!
+    
+    var parentView: HomeViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if parentView == nil {
+            showAlert("Alerta", message: "Faltou o ParentViewController")
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +33,26 @@ class PedirTutorialView: UIViewController {
     }
     
     @IBAction func backToHome(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
+    
+    @IBAction func PedirNovoTutorial(sender: AnyObject) {
+        if self.labelTags.text == "" || self.labelTitulo.text == "" || self.textViewDescricao.text == "" {
+            self.showAlert("Alerta", message: "Preencha todos os campos")
+            return
+        }
+        
+        // TODO: salvar a requisição
+        
+        self.parentView.alert = "NovoTutorialSucesso"
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
     /*
