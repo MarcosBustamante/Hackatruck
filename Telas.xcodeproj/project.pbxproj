@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F19349B1C216E190072ABCE /* VisualizacaoTutoriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */; };
+		3F19349D1C217DC20072ABCE /* PedirTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */; };
 		3F1A27701C1EC8D800409693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A276F1C1EC8D800409693 /* AppDelegate.swift */; };
 		3F1A27721C1EC8D800409693 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27711C1EC8D800409693 /* HomeViewController.swift */; };
 		3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27731C1EC8D800409693 /* MTutoriaisViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizacaoTutoriaisView.swift; sourceTree = "<group>"; };
+		3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedirTutorialView.swift; sourceTree = "<group>"; };
 		3F1A276C1C1EC8D800409693 /* Telas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1A276F1C1EC8D800409693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F1A27711C1EC8D800409693 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				3F1A27711C1EC8D800409693 /* HomeViewController.swift */,
 				3F1A27AB1C1EE54A00409693 /* HomeTableViewCell.swift */,
 				3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */,
+				3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */,
 				3F1A27731C1EC8D800409693 /* MTutoriaisViewController.swift */,
 				3F1A27AD1C1EE8A700409693 /* MTuTableViewCell.swift */,
 				3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */,
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F19349D1C217DC20072ABCE /* PedirTutorialView.swift in Sources */,
 				3F1A27AC1C1EE54A00409693 /* HomeTableViewCell.swift in Sources */,
 				3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */,
 				3F1A27B01C1EEDDA00409693 /* NotTableViewCell.swift in Sources */,

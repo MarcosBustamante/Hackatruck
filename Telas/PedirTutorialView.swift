@@ -1,31 +1,15 @@
 //
-//  ProfileViewController.swift
+//  PedirTutorialView.swift
 //  Telas
 //
-//  Created by Student on 12/14/15.
+//  Created by Student on 12/16/15.
 //  Copyright © 2015 Student. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class PedirTutorialView: UIViewController {
 
-    @IBOutlet weak var tabelaTags: UITableView!
-    @IBOutlet weak var imgPerfil: UIImageView!
-    @IBOutlet weak var labelNome: UILabel!
-    @IBOutlet weak var labelReais: UILabel!
-    
-    @IBAction func adicionarTags(sender: AnyObject) {
-        let alert = UIAlertView()
-        alert.title = "Adicione a tag"
-        alert.addButtonWithTitle("Add")
-        alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
-        alert.addButtonWithTitle("Cancel")
-        let textField = alert.textFieldAtIndex(0)
-        textField?.placeholder = "Tag"
-        
-        alert.show()
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +21,8 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backToHome(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation
