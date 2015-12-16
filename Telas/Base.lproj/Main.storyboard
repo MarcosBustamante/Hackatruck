@@ -344,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="1608" y="-2740"/>
         </scene>
-        <!--Rascunho-->
+        <!--Meus Tutoriais-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="Rascunho" id="8rJ-Kc-sve" customClass="MTutoriaisViewController" customModule="Telas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="MTutoriaisViewController" customModule="Telas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -416,6 +416,9 @@
                                     <segment title="Rascunhos"/>
                                     <segment title="Pedidos"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="dCB-yn-h9q"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <animations/>
@@ -438,6 +441,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="gI2-tx-3TY"/>
                     <connections>
+                        <outlet property="segmentAbas" destination="CEi-R1-657" id="obC-dA-aHc"/>
                         <outlet property="tableMT" destination="GGJ-6Y-qWM" id="EPD-P7-jIp"/>
                     </connections>
                 </viewController>
