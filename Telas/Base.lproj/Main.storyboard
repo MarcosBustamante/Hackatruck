@@ -71,7 +71,7 @@
                                     <navigationItem title="Home" id="nFe-Su-zwX">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C4t-Rz-QDv">
                                             <connections>
-                                                <segue destination="09D-aJ-blg" kind="show" id="XuN-jX-OL0"/>
+                                                <segue destination="09D-aJ-blg" kind="show" identifier="pedirTutoriais" id="XuN-jX-OL0"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -147,7 +147,11 @@
                                 <animations/>
                                 <items>
                                     <navigationItem title="Tutorial" id="t9Y-bg-S2w">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kiS-sf-Mbg"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kiS-sf-Mbg">
+                                            <connections>
+                                                <action selector="backTohome:" destination="ZxX-4A-e9B" id="JuH-dy-Szf"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Like" id="IUF-LE-BVQ"/>
                                     </navigationItem>
                                 </items>
@@ -156,19 +160,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zqf-qc-KpD" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" constant="91" id="ByV-Uz-6Ag"/>
+                            <constraint firstItem="zqf-qc-KpD" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="ByV-Uz-6Ag"/>
                             <constraint firstItem="e0M-ob-s2n" firstAttribute="top" secondItem="YXP-7z-Yvj" secondAttribute="bottom" constant="10" id="EDX-hz-U0F"/>
                             <constraint firstItem="e0M-ob-s2n" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="GnK-Na-e5T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x9y-is-3Bx" secondAttribute="trailing" constant="-14" id="RKm-8V-jEh"/>
                             <constraint firstItem="YXP-7z-Yvj" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="T7h-Li-2Py"/>
                             <constraint firstItem="YXP-7z-Yvj" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" constant="50" id="Ttj-aB-Zea"/>
-                            <constraint firstItem="zqf-qc-KpD" firstAttribute="top" secondItem="e0M-ob-s2n" secondAttribute="bottom" constant="59" id="UOM-Tv-2kN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zqf-qc-KpD" secondAttribute="trailing" constant="229" id="YcQ-RZ-mAb"/>
+                            <constraint firstItem="zqf-qc-KpD" firstAttribute="top" secondItem="e0M-ob-s2n" secondAttribute="bottom" constant="20" id="UOM-Tv-2kN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zqf-qc-KpD" secondAttribute="trailing" id="YcQ-RZ-mAb"/>
                             <constraint firstItem="x9y-is-3Bx" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" constant="-14" id="c1E-Am-WCC"/>
                             <constraint firstItem="x9y-is-3Bx" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" id="nKD-gy-FPA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e0M-ob-s2n" secondAttribute="trailing" id="vii-sC-PUN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YXP-7z-Yvj" secondAttribute="trailing" id="wm9-AD-ohQ"/>
-                            <constraint firstItem="B9A-yF-rR4" firstAttribute="top" secondItem="zqf-qc-KpD" secondAttribute="bottom" constant="197" id="zBf-oG-W9c"/>
+                            <constraint firstItem="B9A-yF-rR4" firstAttribute="top" secondItem="zqf-qc-KpD" secondAttribute="bottom" constant="80" id="zBf-oG-W9c"/>
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>

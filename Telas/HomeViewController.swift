@@ -44,9 +44,9 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let linhaAtualTabela = self.tableHome.indexPathForCell(sender as! UITableViewCell)!.row
         
         if segue.identifier == "homeToTutoriaisView" {
+            let linhaAtualTabela = self.tableHome.indexPathForCell(sender as! UITableViewCell)!.row
             if let visualizacaoTutoriaisView = segue.destinationViewController as? VisualizacaoTutoriaisView {
                 visualizacaoTutoriaisView.tutorial = self.tutoriais[linhaAtualTabela]
             }
