@@ -120,7 +120,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-qc-KpD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-qc-KpD">
                                 <rect key="frame" x="111" y="226" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,15 +128,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome tuorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXP-7z-Yvj">
-                                <rect key="frame" x="132" y="88" width="186" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome tuorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXP-7z-Yvj">
+                                <rect key="frame" x="20" y="70" width="560" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9y-is-3Bx">
-                                <rect key="frame" x="0.0" y="2" width="604" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-ob-s2n">
+                                <rect key="frame" x="20" y="100.5" width="560" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9y-is-3Bx">
+                                <rect key="frame" x="6" y="20" width="588" height="44"/>
                                 <animations/>
                                 <items>
                                     <navigationItem title="Tutorial" id="t9Y-bg-S2w">
@@ -145,17 +152,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-ob-s2n">
-                                <rect key="frame" x="79" y="152" width="90" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zqf-qc-KpD" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" constant="91" id="ByV-Uz-6Ag"/>
+                            <constraint firstItem="e0M-ob-s2n" firstAttribute="top" secondItem="YXP-7z-Yvj" secondAttribute="bottom" constant="10" id="EDX-hz-U0F"/>
+                            <constraint firstItem="e0M-ob-s2n" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="GnK-Na-e5T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x9y-is-3Bx" secondAttribute="trailing" constant="-14" id="RKm-8V-jEh"/>
+                            <constraint firstItem="YXP-7z-Yvj" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="T7h-Li-2Py"/>
+                            <constraint firstItem="YXP-7z-Yvj" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" constant="50" id="Ttj-aB-Zea"/>
+                            <constraint firstItem="zqf-qc-KpD" firstAttribute="top" secondItem="e0M-ob-s2n" secondAttribute="bottom" constant="59" id="UOM-Tv-2kN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zqf-qc-KpD" secondAttribute="trailing" constant="229" id="YcQ-RZ-mAb"/>
+                            <constraint firstItem="x9y-is-3Bx" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" constant="-14" id="c1E-Am-WCC"/>
+                            <constraint firstItem="x9y-is-3Bx" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" id="nKD-gy-FPA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e0M-ob-s2n" secondAttribute="trailing" id="vii-sC-PUN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YXP-7z-Yvj" secondAttribute="trailing" id="wm9-AD-ohQ"/>
+                            <constraint firstItem="B9A-yF-rR4" firstAttribute="top" secondItem="zqf-qc-KpD" secondAttribute="bottom" constant="197" id="zBf-oG-W9c"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="labelNomeAutor" destination="e0M-ob-s2n" id="NbY-Ve-cdv"/>
                         <outlet property="labelNomeTutorial" destination="YXP-7z-Yvj" id="bq0-im-pQ3"/>
