@@ -145,19 +145,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-ob-s2n">
-                                <rect key="frame" x="79" y="152" width="90" height="21"/>
+<<<<<<< b102d15d61eb353d987d013afeea034608b690af
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome tuorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXP-7z-Yvj">
+                                <rect key="frame" x="132" y="88" width="186" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-ob-b2D">
+                                <rect key="frame" x="132" y="129" width="235" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+=======
+>>>>>>> Nada
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="labelNomeAutor" destination="e0M-ob-s2n" id="NbY-Ve-cdv"/>
+                        <outlet property="labelNomeAutor" destination="7WM-ob-b2D" id="mfI-Pd-80f"/>
                         <outlet property="labelNomeTutorial" destination="YXP-7z-Yvj" id="bq0-im-pQ3"/>
                         <outlet property="textViewTutorial" destination="zqf-qc-KpD" id="qIt-mZ-4LH"/>
                     </connections>
