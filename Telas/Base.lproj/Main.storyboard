@@ -312,6 +312,7 @@
                                             <outlet property="labelNome" destination="bnc-Ov-gBJ" id="f0I-4o-5Zf"/>
                                             <outlet property="labelNomeTutorial" destination="zzY-f8-I34" id="cE9-GP-9Dr"/>
                                             <outlet property="labelPublicado" destination="bnc-Ov-gBJ" id="IbB-pU-7Yw"/>
+                                            <segue destination="i2m-Cg-iYS" kind="show" id="PXy-9y-hUy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -356,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="-1389"/>
+            <point key="canvasLocation" x="542" y="-1385"/>
         </scene>
         <!--Notificacao-->
         <scene sceneID="oZE-9k-6OI">
@@ -374,7 +375,42 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OnU-y1-leW" id="LUW-wK-ram">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome Tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTA-CN-hKM">
+                                            <rect key="frame" x="31" y="3" width="514" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Publicado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UB-xE-xzh">
+                                            <rect key="frame" x="355" y="18" width="107" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nome Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-cN-BTA">
+                                            <rect key="frame" x="31" y="21" width="128" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="LTA-CN-hKM" firstAttribute="top" secondItem="LUW-wK-ram" secondAttribute="topMargin" id="1GJ-Wq-rhJ"/>
+                                        <constraint firstItem="wIM-cN-BTA" firstAttribute="leading" secondItem="LTA-CN-hKM" secondAttribute="leading" id="5XO-77-ebq"/>
+                                        <constraint firstItem="LTA-CN-hKM" firstAttribute="leading" secondItem="LUW-wK-ram" secondAttribute="leadingMargin" constant="23" id="9b4-7g-8cP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wIM-cN-BTA" secondAttribute="bottom" id="ACy-MI-Tla"/>
+                                        <constraint firstItem="7UB-xE-xzh" firstAttribute="leading" secondItem="wIM-cN-BTA" secondAttribute="trailing" constant="15" id="BhY-RL-E5L"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="LTA-CN-hKM" secondAttribute="trailing" id="DIC-TP-QVY"/>
+                                        <constraint firstItem="wIM-cN-BTA" firstAttribute="top" secondItem="LTA-CN-hKM" secondAttribute="bottom" id="E3k-6P-diy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7UB-xE-xzh" secondAttribute="trailing" id="GWY-rx-hRf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7UB-xE-xzh" secondAttribute="bottom" id="a1k-xy-KUt"/>
+                                        <constraint firstItem="7UB-xE-xzh" firstAttribute="top" secondItem="LTA-CN-hKM" secondAttribute="bottom" id="a4n-XN-GOt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                             </tableViewCell>
@@ -394,7 +430,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNS-BQ-IVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="-499"/>
+            <point key="canvasLocation" x="156" y="-475"/>
         </scene>
         <!--Pedido Tutoriais View-->
         <scene sceneID="WjT-fe-m1N">
@@ -462,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHG-md-w4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="-467"/>
+            <point key="canvasLocation" x="1042" y="-435"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -484,7 +520,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-453" y="-1384"/>
+            <point key="canvasLocation" x="-827" y="-2192"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="LFN-Bt-rJj">
@@ -591,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mva-ei-XSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759" y="-89"/>
+            <point key="canvasLocation" x="-879" y="-473"/>
         </scene>
         <!--Editar Rascunho-->
         <scene sceneID="stg-iL-glI">
@@ -658,7 +694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPZ-g4-Lr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="-1323"/>
+            <point key="canvasLocation" x="1470" y="-1283"/>
         </scene>
     </scenes>
     <resources>
