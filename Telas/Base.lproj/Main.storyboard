@@ -102,12 +102,13 @@
                         <inset key="imageInsets" minX="2" minY="4" maxX="2" maxY="2"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="searchBar" destination="wzR-YQ-SgT" id="Ggz-sg-SQ9"/>
                         <outlet property="tableHome" destination="eSR-ZD-Nsc" id="8OD-5p-Lrm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDb-8C-wYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-1736"/>
+            <point key="canvasLocation" x="628" y="-2384"/>
         </scene>
         <!--Visualizacao Tutoriais View-->
         <scene sceneID="e0f-o2-pSb">
@@ -185,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ln-2q-5m7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="-1767"/>
+            <point key="canvasLocation" x="1610" y="-2079"/>
         </scene>
         <!--Pedir Tutorial View-->
         <scene sceneID="0Dx-R7-PzI">
@@ -255,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSG-0r-Hti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="-2580"/>
+            <point key="canvasLocation" x="1608" y="-2740"/>
         </scene>
         <!--Rascunho-->
         <scene sceneID="wg7-f3-ORb">
@@ -355,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-913"/>
+            <point key="canvasLocation" x="610" y="-1389"/>
         </scene>
         <!--Notificacao-->
         <scene sceneID="oZE-9k-6OI">
@@ -393,12 +394,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNS-BQ-IVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="-235"/>
+            <point key="canvasLocation" x="644" y="-499"/>
         </scene>
-        <!--View Controller-->
+        <!--Pedido Tutoriais View-->
         <scene sceneID="WjT-fe-m1N">
             <objects>
-                <viewController id="e9O-IZ-FXW" sceneMemberID="viewController">
+                <viewController id="e9O-IZ-FXW" customClass="PedidoTutoriaisView" customModule="Telas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t5V-Zn-7BC"/>
                         <viewControllerLayoutGuide type="bottom" id="yWf-tT-96L"/>
@@ -407,35 +408,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5O-Gt-7uG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5O-Gt-7uG">
                                 <rect key="frame" x="245" y="93" width="132" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc1-0j-aXm">
-                                <rect key="frame" x="246" y="131" width="79" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc1-0j-aXm">
+                                <rect key="frame" x="246" y="151" width="79" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UK9-Rl-AcU">
-                                <rect key="frame" x="220" y="210" width="127" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lJR-4b-op9">
+                                <rect key="frame" x="185" y="216" width="240" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzS-y4-YsW">
+                                <rect key="frame" x="78" y="41" width="469" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Pedido de Tutorial" id="jA1-bI-bG0">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="1fA-Lc-ukZ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Aceitar" id="P2B-6G-KLW"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mzS-y4-YsW" secondAttribute="trailing" constant="-14" id="1BL-XU-rsv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lJR-4b-op9" secondAttribute="trailing" id="DG7-1M-AfQ"/>
+                            <constraint firstItem="Zc1-0j-aXm" firstAttribute="leading" secondItem="g7L-Nl-zN6" secondAttribute="leadingMargin" constant="20" id="EmF-Ci-Mv3"/>
+                            <constraint firstItem="mzS-y4-YsW" firstAttribute="leading" secondItem="g7L-Nl-zN6" secondAttribute="leadingMargin" constant="-14" id="Uk2-0b-NCW"/>
+                            <constraint firstItem="mzS-y4-YsW" firstAttribute="top" secondItem="t5V-Zn-7BC" secondAttribute="bottom" id="Wj6-7b-hNe"/>
+                            <constraint firstItem="i5O-Gt-7uG" firstAttribute="top" secondItem="t5V-Zn-7BC" secondAttribute="bottom" constant="50" id="YCO-QE-j16"/>
+                            <constraint firstItem="i5O-Gt-7uG" firstAttribute="leading" secondItem="g7L-Nl-zN6" secondAttribute="leadingMargin" constant="20" id="aPr-ag-HSf"/>
+                            <constraint firstItem="lJR-4b-op9" firstAttribute="leading" secondItem="g7L-Nl-zN6" secondAttribute="leadingMargin" id="b4k-vA-fgj"/>
+                            <constraint firstItem="yWf-tT-96L" firstAttribute="top" secondItem="lJR-4b-op9" secondAttribute="bottom" constant="60" id="tFk-zb-Yip"/>
+                            <constraint firstItem="Zc1-0j-aXm" firstAttribute="top" secondItem="i5O-Gt-7uG" secondAttribute="bottom" constant="10" id="upQ-gI-CGR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i5O-Gt-7uG" secondAttribute="trailing" constant="20" id="yH4-2A-vmA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zc1-0j-aXm" secondAttribute="trailing" constant="20" id="ya9-N9-W8T"/>
+                            <constraint firstItem="lJR-4b-op9" firstAttribute="top" secondItem="Zc1-0j-aXm" secondAttribute="bottom" constant="20" id="z44-9y-8mk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHG-md-w4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="-259"/>
+            <point key="canvasLocation" x="1618" y="-467"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -457,7 +484,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="-520"/>
+            <point key="canvasLocation" x="-453" y="-1384"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="LFN-Bt-rJj">
@@ -564,7 +591,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mva-ei-XSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="543"/>
+            <point key="canvasLocation" x="-759" y="-89"/>
         </scene>
         <!--Editar Rascunho-->
         <scene sceneID="stg-iL-glI">
@@ -604,6 +631,7 @@
                                 <items>
                                     <navigationItem title="Editar Rascunho" id="0bX-cl-Gfp">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="1aa-Nj-FaI"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Publicar" id="G7u-Yo-rsQ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -630,7 +658,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPZ-g4-Lr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="-1091"/>
+            <point key="canvasLocation" x="1678" y="-1323"/>
         </scene>
     </scenes>
     <resources>
