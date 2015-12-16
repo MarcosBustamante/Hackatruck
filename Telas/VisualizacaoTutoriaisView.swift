@@ -9,10 +9,19 @@
 import UIKit
 
 class VisualizacaoTutoriaisView: UIViewController {
-
+    
+    @IBOutlet weak var labelNomeTutorial: UILabel!
+    @IBOutlet weak var labelNomeAutor: UILabel!
+    @IBOutlet weak var textViewTutorial: UITextView!
+    
+    var tutorial = [String: String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.labelNomeAutor.text = self.tutorial["nome_autor"]
+        self.labelNomeTutorial.text = self.tutorial["nome_tutorial"]
+        self.textViewTutorial.text = self.tutorial["desc_tutorial"]
         // Do any additional setup after loading the view.
     }
 

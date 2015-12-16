@@ -23,7 +23,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="TjV-Ym-WlU" customClass="HomeTableViewCell" customModule="Telas" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTutoriaisHome" id="TjV-Ym-WlU" customClass="HomeTableViewCell" customModule="Telas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="407" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TjV-Ym-WlU" id="Rr0-SV-zRK">
@@ -59,7 +59,7 @@
                                         <connections>
                                             <outlet property="labelNome" destination="KnI-wm-4qm" id="ozo-b5-hY1"/>
                                             <outlet property="labelNomeTutorial" destination="KqA-k8-Mtm" id="uUy-xJ-Ycx"/>
-                                            <segue destination="ZxX-4A-e9B" kind="show" id="9eg-TK-ZwG"/>
+                                            <segue destination="ZxX-4A-e9B" kind="show" identifier="homeToTutoriaisView" id="9eg-TK-ZwG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -120,13 +120,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-ob-b2D">
-                                <rect key="frame" x="139" y="129" width="235" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-qc-KpD">
                                 <rect key="frame" x="111" y="226" width="240" height="128"/>
                                 <animations/>
@@ -152,10 +145,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-ob-b2D">
+                                <rect key="frame" x="132" y="129" width="235" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="labelNomeAutor" destination="7WM-ob-b2D" id="mfI-Pd-80f"/>
+                        <outlet property="labelNomeTutorial" destination="YXP-7z-Yvj" id="bq0-im-pQ3"/>
+                        <outlet property="textViewTutorial" destination="zqf-qc-KpD" id="qIt-mZ-4LH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ln-2q-5m7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
