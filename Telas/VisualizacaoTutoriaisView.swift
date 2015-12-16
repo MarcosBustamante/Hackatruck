@@ -31,6 +31,7 @@ class VisualizacaoTutoriaisView: UIViewController {
     }
     
     @IBAction func backTohome(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {})
     }
 
     /*

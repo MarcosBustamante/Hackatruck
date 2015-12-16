@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F19349B1C216E190072ABCE /* VisualizacaoTutoriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */; };
-		3F19349D1C217DC20072ABCE /* PedirTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */; };
-		3F19349F1C2186090072ABCE /* PedidoTutoriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19349E1C2186090072ABCE /* PedidoTutoriaisView.swift */; };
 		3F1A27701C1EC8D800409693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A276F1C1EC8D800409693 /* AppDelegate.swift */; };
 		3F1A27721C1EC8D800409693 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27711C1EC8D800409693 /* HomeViewController.swift */; };
 		3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27731C1EC8D800409693 /* MTutoriaisViewController.swift */; };
@@ -28,8 +25,7 @@
 		3F1A27B01C1EEDDA00409693 /* NotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */; };
 		3F1A27B21C1EEDF300409693 /* NotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */; };
 		3F1A27B41C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */; };
-		3F7EDB3D1C202F83002B7E79 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */; };
-		3F90D6B21C217F9100E7DB43 /* Tutoriais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */; };
+		3F216D331C2040DB002A1F3F /* VisualizacaoTutoriaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F216D321C2040DB002A1F3F /* VisualizacaoTutoriaisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizacaoTutoriaisView.swift; sourceTree = "<group>"; };
-		3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedirTutorialView.swift; sourceTree = "<group>"; };
-		3F19349E1C2186090072ABCE /* PedidoTutoriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidoTutoriaisView.swift; sourceTree = "<group>"; };
 		3F1A276C1C1EC8D800409693 /* Telas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1A276F1C1EC8D800409693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F1A27711C1EC8D800409693 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +70,7 @@
 		3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotTableViewCell.swift; path = ../NotTableViewCell.swift; sourceTree = "<group>"; };
 		3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotTableViewController.swift; sourceTree = "<group>"; };
 		3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_picture_by_kyo_tux-d4hrimy.png"; sourceTree = "<group>"; };
-		3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutoriais.swift; sourceTree = "<group>"; };
+		3F216D321C2040DB002A1F3F /* VisualizacaoTutoriaisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizacaoTutoriaisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +101,6 @@
 		3F1A27631C1EC8D800409693 = {
 			isa = PBXGroup;
 			children = (
-				3F90D6B01C217F7600E7DB43 /* Usecase */,
 				3F1A276E1C1EC8D800409693 /* Telas */,
 				3F1A27851C1EC8D800409693 /* TelasTests */,
 				3F1A27901C1EC8D800409693 /* TelasUITests */,
@@ -137,16 +128,13 @@
 				3F1A27A21C1ED6CD00409693 /* Home-44.png */,
 				3F1A276F1C1EC8D800409693 /* AppDelegate.swift */,
 				3F1A27711C1EC8D800409693 /* HomeViewController.swift */,
+				3F216D321C2040DB002A1F3F /* VisualizacaoTutoriaisView.swift */,
 				3F1A27AB1C1EE54A00409693 /* HomeTableViewCell.swift */,
-				3F19349A1C216E190072ABCE /* VisualizacaoTutoriaisView.swift */,
-				3F19349C1C217DC20072ABCE /* PedirTutorialView.swift */,
 				3F1A27731C1EC8D800409693 /* MTutoriaisViewController.swift */,
 				3F1A27AD1C1EE8A700409693 /* MTuTableViewCell.swift */,
 				3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */,
 				3F1A27AF1C1EEDDA00409693 /* NotTableViewCell.swift */,
-				3F19349E1C2186090072ABCE /* PedidoTutoriaisView.swift */,
 				3F1A27A91C1EDFAA00409693 /* ProfileViewController.swift */,
-				3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */,
 				3F1A27751C1EC8D800409693 /* Main.storyboard */,
 				3F1A27781C1EC8D800409693 /* Assets.xcassets */,
 				3F1A277A1C1EC8D800409693 /* LaunchScreen.storyboard */,
@@ -171,14 +159,6 @@
 				3F1A27931C1EC8D800409693 /* Info.plist */,
 			);
 			path = TelasUITests;
-			sourceTree = "<group>";
-		};
-		3F90D6B01C217F7600E7DB43 /* Usecase */ = {
-			isa = PBXGroup;
-			children = (
-				3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */,
-			);
-			name = Usecase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,16 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F19349D1C217DC20072ABCE /* PedirTutorialView.swift in Sources */,
 				3F1A27AC1C1EE54A00409693 /* HomeTableViewCell.swift in Sources */,
+				3F216D331C2040DB002A1F3F /* VisualizacaoTutoriaisView.swift in Sources */,
 				3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */,
 				3F1A27B01C1EEDDA00409693 /* NotTableViewCell.swift in Sources */,
-				3F19349F1C2186090072ABCE /* PedidoTutoriaisView.swift in Sources */,
-				3F7EDB3D1C202F83002B7E79 /* ProfileTableViewCell.swift in Sources */,
-				3F19349B1C216E190072ABCE /* VisualizacaoTutoriaisView.swift in Sources */,
 				3F1A27AA1C1EDFAA00409693 /* ProfileViewController.swift in Sources */,
 				3F1A27701C1EC8D800409693 /* AppDelegate.swift in Sources */,
-				3F90D6B21C217F9100E7DB43 /* Tutoriais.swift in Sources */,
 				3F1A27AE1C1EE8A700409693 /* MTuTableViewCell.swift in Sources */,
 				3F1A27721C1EC8D800409693 /* HomeViewController.swift in Sources */,
 				3F1A27B21C1EEDF300409693 /* NotTableViewController.swift in Sources */,
