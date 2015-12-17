@@ -37,12 +37,16 @@ class PedirTutorialView: UIViewController {
     }
     
     @IBAction func PedirNovoTutorial(sender: AnyObject) {
-        if self.labelTags.text == "" || self.labelTitulo.text == "" || self.textViewDescricao.text == "" {
+        let tags = self.labelTags.text
+        let titulo = self.labelTitulo.text
+        let descricao = self.textViewDescricao.text
+        
+        if tags == "" || titulo == "" || descricao == "" {
             self.showAlert("Alerta", message: "Preencha todos os campos")
             return
         }
         
-        // TODO: salvar a requisição
+        Tutoriais.pedirTutorial(titulo, descricao: descricao, tags: tags)
         
         self.parentView.alert = "NovoTutorialSucesso"
         self.dismissViewControllerAnimated(true, completion: {})

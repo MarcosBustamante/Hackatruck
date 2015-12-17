@@ -34,7 +34,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if alert != nil {
             self.showAlert("Parabéns", message: "O seu tutorial foi pedido para um especialista")
             alert = nil
-        }
+        }   
     }
 
     override func didReceiveMemoryWarning() {

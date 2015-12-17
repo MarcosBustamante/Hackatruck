@@ -24,4 +24,8 @@ class Tutoriais{
         }
         return tutoriais
     }
+    
+    static func pedirTutorial(titulo: String, descricao: String, tags: String) -> Bool {
+        return true
+    }
 }
