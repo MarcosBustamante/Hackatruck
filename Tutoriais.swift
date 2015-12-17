@@ -14,6 +14,7 @@ class Tutoriais{
         var tutoriais = [[String: String]]()
         for i in 1...20 {
             tutoriais.append([
+                "id": "\(i)",
                 "nome_autor": "Autor \(i)",
                 "desc_tutorial": "Desc \(i)",
                 "nome_tutorial": "Tutorial \(i)",
@@ -27,5 +28,13 @@ class Tutoriais{
     
     static func pedirTutorial(titulo: String, descricao: String, tags: String) -> Bool {
         return true
+    }
+    
+    static func visto(tutorial_id: String) {
+        return
+    }
+    
+    static func like(tutorial_id: String) {
+        return
     }
 }
