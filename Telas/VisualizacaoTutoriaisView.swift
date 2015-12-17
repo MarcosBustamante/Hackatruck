@@ -60,7 +60,7 @@ class VisualizacaoTutoriaisView: UIViewController {
         self.textFieldTitulo.hidden = true
         
         }
-        if pedido == true{
+        if rascunho == true{
             self.textFieldTitulo.text = self.tutorial["nome_tutorial"]
             self.textViewTutoriaisEditavel.text = self.tutorial["desc_tutorial"]
             self.textFieldTags.text = self.tutorial["tag"]
@@ -77,7 +77,7 @@ class VisualizacaoTutoriaisView: UIViewController {
             
             
         }
-        if{
+        if pedido == true{
             self.labelNomeAutor.text = self.tutorial["nome_autor"]
             self.labelNomeTutorial.text = self.tutorial["nome_tutorial"]
             self.textViewTutorial.text = self.tutorial["desc_tutorial"]

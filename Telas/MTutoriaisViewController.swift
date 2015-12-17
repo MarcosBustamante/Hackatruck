@@ -81,8 +81,13 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
                     visualizacaoTutoriaisView.rascunho = false
                 }
                 if segmentAbas.selectedSegmentIndex == 1 {
-                    visualizacaoTutoriaisView.pub = true
+                    visualizacaoTutoriaisView.pub = false
                     visualizacaoTutoriaisView.pedido = false
+                    visualizacaoTutoriaisView.rascunho = true
+                }
+                if segmentAbas.selectedSegmentIndex == 2 {
+                    visualizacaoTutoriaisView.pub = false
+                    visualizacaoTutoriaisView.pedido = true
                     visualizacaoTutoriaisView.rascunho = false
                 }
                 
