@@ -66,22 +66,30 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBAction func indexChanged(sender: AnyObject) {
         self.tableMT.reloadData()
+        
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        
         if segue.identifier == "segueMT" {
             let linhaAtualTabela = self.tableMT.indexPathForCell(sender as! UITableViewCell)!.row
             if let visualizacaoTutoriaisView = segue.destinationViewController as? VisualizacaoTutoriaisView {
                 visualizacaoTutoriaisView.tutorial = self.data[self.segmentAbas.selectedSegmentIndex][linhaAtualTabela]
-
+                if segmentAbas.selectedSegmentIndex == 0 {
+                    visualizacaoTutoriaisView.pub = true
+                    visualizacaoTutoriaisView.pedido = false
+                    visualizacaoTutoriaisView.rascunho = false
+                }
+                if segmentAbas.selectedSegmentIndex == 1 {
+                    visualizacaoTutoriaisView.pub = true
+                    visualizacaoTutoriaisView.pedido = false
+                    visualizacaoTutoriaisView.rascunho = false
                 }
                 
-            
-            
+            }
         }
         
+    
     }
     
 

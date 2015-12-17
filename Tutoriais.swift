@@ -21,6 +21,7 @@ class Tutoriais{
                 "likes": "\(i)",
                 "visto": "\(20 - i)",
                 "publicado": "\(i%2 == 0)",
+                "tag":"Tag \(i)"
                 ])
         }
         return tutoriais
