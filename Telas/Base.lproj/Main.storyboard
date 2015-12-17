@@ -224,6 +224,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-nj-QH3">
+                                <rect key="frame" x="26" y="167" width="540" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UiS-Yc-T8c">
+                                <rect key="frame" x="126" y="227" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tags" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGl-kP-Y4h">
+                                <rect key="frame" x="67" y="428" width="392" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -234,6 +254,7 @@
                             <constraint firstItem="3xL-4I-NuX" firstAttribute="top" secondItem="e0M-ob-s2n" secondAttribute="bottom" constant="10" id="DyO-R3-ZJA"/>
                             <constraint firstItem="e0M-ob-s2n" firstAttribute="top" secondItem="YXP-7z-Yvj" secondAttribute="bottom" constant="10" id="EDX-hz-U0F"/>
                             <constraint firstItem="e0M-ob-s2n" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" id="GnK-Na-e5T"/>
+                            <constraint firstItem="UiS-Yc-T8c" firstAttribute="top" secondItem="4BQ-nj-QH3" secondAttribute="bottom" constant="10" id="LmX-Dk-cVU"/>
                             <constraint firstItem="PBd-72-4vP" firstAttribute="leading" secondItem="0eg-ro-Kca" secondAttribute="trailing" constant="5" id="LvK-wf-Lm4"/>
                             <constraint firstItem="PBd-72-4vP" firstAttribute="top" secondItem="e0M-ob-s2n" secondAttribute="bottom" constant="10" id="Mkb-Pd-8QQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x9y-is-3Bx" secondAttribute="trailing" constant="-14" id="RKm-8V-jEh"/>
@@ -242,13 +263,16 @@
                             <constraint firstItem="YXP-7z-Yvj" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" constant="50" id="Ttj-aB-Zea"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zqf-qc-KpD" secondAttribute="trailing" id="YcQ-RZ-mAb"/>
                             <constraint firstItem="zqf-qc-KpD" firstAttribute="top" secondItem="3xL-4I-NuX" secondAttribute="bottom" constant="80" id="Zfl-yO-EFI"/>
+                            <constraint firstItem="cGl-kP-Y4h" firstAttribute="top" secondItem="UiS-Yc-T8c" secondAttribute="bottom" constant="10" id="b65-Jf-rDa"/>
                             <constraint firstItem="0eg-ro-Kca" firstAttribute="leading" secondItem="CGn-3c-6Ry" secondAttribute="trailing" constant="5" id="be0-2A-voF"/>
                             <constraint firstItem="x9y-is-3Bx" firstAttribute="leading" secondItem="pxh-5O-XMS" secondAttribute="leadingMargin" constant="-14" id="c1E-Am-WCC"/>
                             <constraint firstItem="0eg-ro-Kca" firstAttribute="leading" secondItem="CGn-3c-6Ry" secondAttribute="trailing" constant="5" id="lHL-Uj-aZx"/>
                             <constraint firstItem="x9y-is-3Bx" firstAttribute="top" secondItem="BJJ-1g-i7C" secondAttribute="bottom" id="nKD-gy-FPA"/>
                             <constraint firstItem="PBd-72-4vP" firstAttribute="leading" secondItem="0eg-ro-Kca" secondAttribute="trailing" constant="5" id="nZ6-vb-wrV"/>
+                            <constraint firstItem="cGl-kP-Y4h" firstAttribute="leading" secondItem="4BQ-nj-QH3" secondAttribute="leading" id="osw-uO-cX3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e0M-ob-s2n" secondAttribute="trailing" id="vii-sC-PUN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YXP-7z-Yvj" secondAttribute="trailing" id="wm9-AD-ohQ"/>
+                            <constraint firstItem="cGl-kP-Y4h" firstAttribute="trailing" secondItem="4BQ-nj-QH3" secondAttribute="trailing" id="wvL-1d-Xyn"/>
                             <constraint firstItem="B9A-yF-rR4" firstAttribute="top" secondItem="zqf-qc-KpD" secondAttribute="bottom" constant="80" id="zBf-oG-W9c"/>
                             <constraint firstItem="CGn-3c-6Ry" firstAttribute="leading" secondItem="3xL-4I-NuX" secondAttribute="trailing" constant="5" id="zd9-J1-dQo"/>
                             <constraint firstItem="zqf-qc-KpD" firstAttribute="leading" secondItem="3xL-4I-NuX" secondAttribute="trailing" constant="-84" id="zqA-gG-MAb"/>
@@ -406,7 +430,7 @@
                                         <connections>
                                             <outlet property="labelNomeTutorial" destination="zzY-f8-I34" id="cE9-GP-9Dr"/>
                                             <outlet property="labelPublicado" destination="bnc-Ov-gBJ" id="IbB-pU-7Yw"/>
-                                            <segue destination="i2m-Cg-iYS" kind="show" id="PXy-9y-hUy"/>
+                                            <segue destination="ZxX-4A-e9B" kind="show" identifier="segueMT" id="rdO-Vh-piK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -792,7 +816,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPZ-g4-Lr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="-1331"/>
+            <point key="canvasLocation" x="1551" y="-1394"/>
         </scene>
     </scenes>
     <resources>
@@ -802,4 +826,7 @@
         <image name="User Male-44.png" width="44" height="44"/>
         <image name="profile_picture_by_kyo_tux-d4hrimy.png" width="300" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rdO-Vh-piK"/>
+    </inferredMetricsTieBreakers>
 </document>

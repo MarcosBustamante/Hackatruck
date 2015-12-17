@@ -13,6 +13,7 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var segmentAbas: UISegmentedControl!
     @IBOutlet weak var tableMT: UITableView!
     var tutoriais = [[String: String]]()
+    var pub = false
     
     var publicados = [[String: String]]()
     var npublicados = [[String: String]]()
@@ -65,6 +66,22 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBAction func indexChanged(sender: AnyObject) {
         self.tableMT.reloadData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if segue.identifier == "segueMT" {
+            let linhaAtualTabela = self.tableMT.indexPathForCell(sender as! UITableViewCell)!.row
+            if let visualizacaoTutoriaisView = segue.destinationViewController as? VisualizacaoTutoriaisView {
+                visualizacaoTutoriaisView.tutorial = self.data[self.segmentAbas.selectedSegmentIndex][linhaAtualTabela]
+
+                }
+                
+            
+            
+        }
+        
     }
     
 

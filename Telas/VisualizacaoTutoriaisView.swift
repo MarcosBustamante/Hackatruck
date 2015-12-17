@@ -10,6 +10,7 @@ import UIKit
 
 class VisualizacaoTutoriaisView: UIViewController {
     
+    
     @IBOutlet weak var labelNomeTutorial: UILabel!
     @IBOutlet weak var labelNomeAutor: UILabel!
     @IBOutlet weak var labelVistoPor: UILabel!
@@ -47,5 +48,7 @@ class VisualizacaoTutoriaisView: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
+
 
 }
