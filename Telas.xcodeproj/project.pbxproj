@@ -29,6 +29,7 @@
 		3F1A27B21C1EEDF300409693 /* NotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */; };
 		3F1A27B41C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */; };
 		3F7EDB3D1C202F83002B7E79 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */; };
+		3F9034981C22DE1600B7B65F /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9034971C22DE1600B7B65F /* Notificacao.swift */; };
 		3F90D6B21C217F9100E7DB43 /* Tutoriais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		3F1A27B11C1EEDF300409693 /* NotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotTableViewController.swift; sourceTree = "<group>"; };
 		3F1A27B31C1EF6E600409693 /* profile_picture_by_kyo_tux-d4hrimy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_picture_by_kyo_tux-d4hrimy.png"; sourceTree = "<group>"; };
 		3F7EDB3C1C202F83002B7E79 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3F9034971C22DE1600B7B65F /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacao.swift; sourceTree = "<group>"; };
 		3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutoriais.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				3F90D6B11C217F9100E7DB43 /* Tutoriais.swift */,
+				3F9034971C22DE1600B7B65F /* Notificacao.swift */,
 			);
 			name = Usecase;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					3F1A276B1C1EC8D800409693 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = C3EEZAG945;
 					};
 					3F1A27811C1EC8D800409693 = {
 						CreatedOnToolsVersion = 7.1;
@@ -317,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9034981C22DE1600B7B65F /* Notificacao.swift in Sources */,
 				3F19349D1C217DC20072ABCE /* PedirTutorialView.swift in Sources */,
 				3F1A27AC1C1EE54A00409693 /* HomeTableViewCell.swift in Sources */,
 				3F1A27741C1EC8D800409693 /* MTutoriaisViewController.swift in Sources */,
@@ -469,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Telas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fatec.Telas;
@@ -480,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Telas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fatec.Telas;
