@@ -12,42 +12,35 @@ class NotTableViewController: UITableViewController {
 
     @IBOutlet var tableNot: UITableView!
     
+    var notificacoes = [[String: String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableNot.dataSource = self
+        self.notificacoes = Notificacao.listar_notificacoe("sergio")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.notificacoes.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let linhaAtualTabela = indexPath.row
+        let cell = tableView.dequeueReusableCellWithIdentifier("notReusable", forIndexPath: indexPath) as! NotTableViewCell
 
-        // Configure the cell...
+        let notificacao = self.notificacoes[linhaAtualTabela]
+        
+        cell.labelAutor.text = notificacao["user_id"]
+        cell.labelNomeTutorial.text = notificacao["titulo"]
+        cell.labelPublicado.text = notificacao["pedido"] == "true" ? "Pedido" : "Recebido"
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

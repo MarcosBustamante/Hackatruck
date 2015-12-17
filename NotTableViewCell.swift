@@ -10,6 +10,10 @@ import UIKit
 
 class NotTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelNomeTutorial: UILabel!
+    @IBOutlet weak var labelAutor: UILabel!
+    @IBOutlet weak var labelPublicado: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
