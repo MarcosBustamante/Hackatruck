@@ -8,16 +8,20 @@
 
 import UIKit
 
-class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    @IBOutlet weak var searchBarMT: UISearchBar!
     @IBOutlet weak var segmentAbas: UISegmentedControl!
     @IBOutlet weak var tableMT: UITableView!
+    
+    var searchText: String?
     var tutoriais = [[String: String]]()
     var pub = false
-    
+    var searchActive : Bool = false
     var publicados = [[String: String]]()
     var npublicados = [[String: String]]()
     var pedidos = [[String: String]]()
+    var filtered = [[String: String]]()
     
     var data = [[[String: String]]]()
     let titulos = ["Publicado", "Rascunho", "Pedido"]
@@ -39,7 +43,51 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
         
         self.tableMT.dataSource = self
         self.tableMT.delegate = self
+        self.searchBarMT.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        self.searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        self.searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        self.searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        self.searchActive = false;
+    }
+    
+    func filter_data() -> [[String: String]] {
+        if self.searchText == nil{
+            self.searchText = ""
+        }
+        return self.data[self.segmentAbas.selectedSegmentIndex].filter({ (datas) -> Bool in
+            let tmp: NSString = datas["nome_tutorial"]!
+            let range = tmp.rangeOfString(self.searchText!, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        self.searchText = searchText
+        
+        self.filtered = filter_data()
+        
+        if(filtered.count == 0){
+            self.searchActive = false;
+        } else {
+            self.searchActive = true;
+        }
+        
+        self.tableMT.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +96,10 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        if(self.searchActive) {
+            self.filtered = filter_data()
+            return self.filtered.count
+        }
         return self.data[self.segmentAbas.selectedSegmentIndex].count
     }
     
@@ -55,8 +107,7 @@ class MTutoriaisViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let linhaAtual = indexPath.row
         let linha = tableView.dequeueReusableCellWithIdentifier("cellMT") as! MTuTableViewCell
-        
-        let data = self.data[self.segmentAbas.selectedSegmentIndex][linhaAtual]
+        let data = self.searchActive ? self.filtered[linhaAtual]: self.data[self.segmentAbas.selectedSegmentIndex][linhaAtual]
         linha.labelNomeTutorial.text = data["nome_tutorial"]
         linha.labelPublicado.text = self.titulos[self.segmentAbas.selectedSegmentIndex]
         

@@ -488,6 +488,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="gI2-tx-3TY"/>
                     <connections>
+                        <outlet property="searchBarMT" destination="5PQ-i8-lAz" id="Nuu-AD-aYD"/>
                         <outlet property="segmentAbas" destination="CEi-R1-657" id="obC-dA-aHc"/>
                         <outlet property="tableMT" destination="GGJ-6Y-qWM" id="EPD-P7-jIp"/>
                     </connections>

@@ -89,7 +89,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if(self.searchActive) {
             return self.filtered.count
         }
-        return self.tutoriais.count;
+        return self.tutoriais.count
     }
     
     
